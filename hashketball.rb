@@ -179,8 +179,12 @@ end
 
 def big_shoe_rebounds 
   player_with_lg_shoe = []
+  
   game_hash.each do | location, team_info|
-    team_info[:players].max_by do |player_name, player_data|
+    team_info[:players].each do |player_name, player_data|
+      player_data[:shoe].max_by
+    end
+  end
       
 end
 
