@@ -138,8 +138,8 @@ end
 
 def team_colors(team_name)
   game_hash.each do |location, team_info|
-    if team_name == "Brooklyn Nets"
-      return 
+    if team_info[:].include?(team_name)
+      return team_info[:colors]
     
 
     else
