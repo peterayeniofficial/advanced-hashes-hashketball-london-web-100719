@@ -153,6 +153,14 @@ def team_names
   return team_array
 end
 
+def player_numbers(team_name)
+  team_numbers = []
+  game_hash.each do |location, team_info|
+    
+  end
+    
+end
+
 
 
 
