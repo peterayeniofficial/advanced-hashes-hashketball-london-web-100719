@@ -145,6 +145,14 @@ def team_colors(team_name)
     
 end
 
+def team_name
+  game_hash.each do |location, team_info|
+    if team_info[:team_name]
+      return team_info[:team_name]
+    end
+  end
+end
+
 
 
 
