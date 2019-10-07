@@ -133,6 +133,7 @@ def shoe_size(player_name)
     if team_info[:players].include?(player_name)
       return team_info[:players][player_name][:shoe]
     end
+  end
 end
 
 
